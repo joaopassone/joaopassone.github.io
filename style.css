@@ -7,10 +7,67 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-a {
-    line-height: 30px;
+.social-network-button {
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    padding: 15px 100px;
 }
 
 h2 {
     color: blue;
+}
+
+#profile-image {
+    border-radius: 100%;
+}
+
+#linkedin-button {
+    background-color: #0a66c2;
+    border: 2px solid #0a66c2;
+}
+
+#linkedin-button:hover {
+    background-color: transparent;
+    color: #0a66c2;
+}
+
+#linkedin-button:hover > #linkedin-image {
+    filter: none;
+}
+
+#linkedin-image {
+    filter: brightness(0) invert();
+    height: 27px;
+    padding-bottom: 3px;
+    padding-right: 15px;
+    vertical-align: middle;
+    transition-duration: 0.4s;
+}
+
+#github-button {
+    background-color: black;
+    border: 2px solid black;
+}
+
+#github-button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+#github-button:hover > #github-image {
+    filter: none;
+}
+
+#github-image {
+    filter: invert();
+    height: 30px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    vertical-align: middle;
+    transition-duration: 0.4s;
 }
