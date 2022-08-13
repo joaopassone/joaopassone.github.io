@@ -42,9 +42,9 @@ h2 {
 
 #linkedin-image {
     filter: brightness(0) invert();
-    height: 27px;
-    padding-bottom: 3px;
-    padding-right: 15px;
+    height: 42px;
+    padding-bottom: 5px;
+    padding-right: 10px;
     vertical-align: middle;
     transition-duration: 0.4s;
 }
