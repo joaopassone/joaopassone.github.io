@@ -27,13 +27,13 @@ h2 {
 }
 
 #linkedin-button {
-    background-color: #0a66c2;
-    border: 2px solid #0a66c2;
+    background-color: #2797cf;
+    border: 2px solid #2797cf;
 }
 
 #linkedin-button:hover {
     background-color: transparent;
-    color: #0a66c2;
+    color: #2797cf;
 }
 
 #linkedin-button:hover > #linkedin-image {
