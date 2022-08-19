@@ -189,3 +189,15 @@ p {
 #habilidades-section {
     padding: 20px 70px 70px;
 }
+
+footer {
+    background-color: #0f5274;
+    box-shadow: 0 0 10px 0 grey;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+    color: white;
+}
