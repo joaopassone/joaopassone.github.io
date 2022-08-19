@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+  font-size: 20px;
+  color: black;
+  line-height: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: rgb(8, 70, 21);
+  width: 100%;
+}
+
+h2 {
+  text-align: left;
+}
+
+#titulo {
+  line-height: 80px;
+  vertical-align: middle;
+  color: white;
+}
+
+img {
+  margin-top: 150px;
+  width: 360px;
+  margin-right: 100px;
+  border-radius: 100%;
+}
+
+.licoes_div {
+  margin: 150px 50px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  text-align: left;
+}
+
+table {
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+table th {
+  border: 1px solid black;
+  padding: 5px 50px;
+  background-color: rgb(8, 70, 21);
+  color: white;
+  width: 22%;
+}
+
+table td {
+  text-align: center;
+}
+
+#link {
+  margin-bottom: 50px;
+}
+
+#link a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(8, 70, 21);
+}
+
+.lado-esquerdo {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  border: 6px solid rgb(8, 70, 21);
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.lado-direito {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  border: 6px solid rgb(8, 70, 21);
+  padding: 20px;
+}
+
+footer {
+  background-color: rgb(8, 70, 21);
+}
+
+footer p {
+  font-size: 14px;
+  color: white;
+}

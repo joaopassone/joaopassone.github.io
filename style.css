@@ -12,12 +12,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-body > div:nth-of-type(2n + 1) {
-    background-color: #f5f5f5;
+body > section:nth-of-type(2n) {
+    background-color: #e3f6fc;
 }
 
 h1 {
     color: #0f5274;
+    font-size: 30px;
 }
 
 h2 {
@@ -26,27 +27,29 @@ h2 {
     font-size: 26px;
 }
 
-p {
-    font-size: 18px;
+h1, h2 {
+    font-family: 'Fira Sans', sans-serif;
 }
 
-#menu-div {
-    display: table-cell;
-    width: 1%;
-    height: 80px;
+p {
+    font-size: 18px;
+    margin: 18px;
+}
+
+#menu-nav {
     background-color: #0f5274;
     box-shadow: 0 0 10px 0 grey;
     padding: 5px;
     vertical-align: middle;
+    line-height: 80px;
 }
 
 #menu-links li {
-    display: inline;
+    display: inline-block;
     font-size: 20px;
 }
 
-#menu-div a {
-    display: table-cell;
+#menu-nav a {
     text-decoration: none;
     color: white;
     padding: 30px 60px;
@@ -54,14 +57,14 @@ p {
     border-radius: 2px;
 }
 
-#menu-div a:hover {
+#menu-nav a:hover {
     background-color: white;
     color: #0f5274;
     font-weight: bold;
     box-shadow: 0 0 10px 0 white;
 }
 
-#quem-sou-div {
+#quem-sou-section {
     padding: 70px 0px;
     width: 70%;
     margin: auto;
@@ -72,7 +75,7 @@ p {
     padding: 40px;
 }
 
-#redes-sociais-div {
+#redes-sociais-section {
     padding: 20px 70px 70px;
 }
 
@@ -86,7 +89,7 @@ p {
 }
 
 .social-network-button {
-    display: table-cell;
+    display: inline-block;
     line-height: 50px;
     color: white;
     text-decoration: none;
@@ -166,14 +169,14 @@ p {
     transition-duration: 0.4s;
 }
 
-#medalhas-div {
+#medalhas-section {
     padding: 20px 70px 70px;
 }
 
-#medalhas-div img {
-    width: 30%;
+#medalhas-section img {
+    width: 600px;
 }
 
-#habilidades-div {
+#habilidades-section {
     padding: 20px 70px 70px;
 }
