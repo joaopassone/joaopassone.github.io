@@ -75,6 +75,10 @@ p {
     padding: 40px;
 }
 
+#projects-section {
+    padding: 20px 70px 70px;
+}
+
 #redes-sociais-section {
     padding: 20px 70px 70px;
 }
@@ -83,12 +87,12 @@ p {
     margin-bottom: 40px;
 }
 
-#network-links-list li {
+#network-links-list li, #projetos-links-list li {
     display: inline;
     margin: 0 10px;
 }
 
-.social-network-button {
+.social-network-button, #projetos-links-list li a {
     display: inline-block;
     line-height: 50px;
     color: white;
@@ -98,6 +102,11 @@ p {
     border-radius: 4px;
     transition-duration: 0.4s;
     width: 280px;
+}
+
+#lessons-learned {
+    background-color: #036b52;
+    border: 2px solid #036b52;
 }
 
 #linkedin-button {
