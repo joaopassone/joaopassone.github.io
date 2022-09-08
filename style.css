@@ -87,12 +87,16 @@ p {
     margin-bottom: 40px;
 }
 
-#network-links-list li, #projetos-links-list li {
-    display: inline;
-    margin: 0 10px;
+#network-links-list, #projetos-links-list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
 }
 
-.social-network-button, #projetos-links-list li a {
+.social-network-button, .projetos-button {
     display: inline-block;
     line-height: 50px;
     color: white;
@@ -104,7 +108,7 @@ p {
     width: 280px;
 }
 
-#lessons-learned {
+.projetos-button {
     background-color: #036b52;
     border: 2px solid #036b52;
 }
