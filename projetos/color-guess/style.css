@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+#score-container {
+  font-size: 30px;
+}
+
+#rgb-color {
+  font-size: 40px;
+  border: 2px solid black;
+  background-color: pink;
+  line-height: 60px;
+  width: 300px;
+  vertical-align: middle;
+  margin: auto;
+}
+
+#answer {
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+#ball-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.ball {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+
+.selected {
+  border: 5px black solid;
+}
+
+#reset-game {
+  font-size: 25px;
+  padding: 10px;
+}

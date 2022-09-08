@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <header>
+    <h1>Meme Generator</h1>
+  </header>
+  <input type="text" id="text-input" maxlength="60" placeholder="Digite o texto do meme aqui"><br>
+  <input type="file" accept="image/png, image/jpg, image/jpeg, image/gif" id="meme-insert"><br>
+  <div id="meme-image-container">
+    <p id="meme-text"></p>
+    <img src="imgs/harold.jpg" alt="Imagem do Meme" id="meme-image">
+  </div>
+  <br>
+  <div id="btn-container">
+    <button id="fire">Borda de Fogo</button>
+    <button id="water">Borda de Água</button>
+    <button id="earth">Borda da Terra</button>
+  </div>
+  <h2>Sugestão de Imagens</h2>
+  <div id="miniatures-container">
+    <img src="imgs/meme1.png" alt="Imagem Meme Futurama" id="meme-1">
+    <img src="imgs/meme2.png" alt="Imagem Meme Namorado Distraído" id="meme-2">
+    <img src="imgs/meme3.png" alt="Imagem Meme Isso é uma Pomba" id="meme-3">
+    <img src="imgs/meme4.png" alt="Imagem Meme Chloe" id="meme-4">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

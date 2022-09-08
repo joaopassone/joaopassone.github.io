@@ -1,0 +1,90 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: Shadows Into Light, cursive;
+}
+
+#carta-texto {
+  font-size: 30px;
+  width: 1000px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#criar-carta {
+  font-size: 20px;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
+#carta-gerada {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+#contador , #contador > * {
+  font-size: 30px;
+  font-family: Shadows Into Light, cursive;
+}
+
+#carta-contador {
+  display: inline;
+}
+
+.newspaper {
+  background-color: antiquewhite;
+  font-family: Times New Roman, Times, serif;
+  font-weight: 700;
+}
+
+.magazine1 {
+  background-color: teal;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.magazine2 {
+  background-image: url('images/pink-pattern.png');
+  color: fuchsia;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+}
+
+.medium {
+  font-size: 20px;
+  padding: 8px;
+}
+
+.big {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.reallybig {
+  font-size: 40px;
+  padding: 15px;
+}
+
+.rotateleft {
+  transform: matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0);
+}
+
+.rotateright {
+  transform: matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, 0);
+}
+
+.skewleft {
+  transform: matrix(1, 0, 0.176327, 1, 0, 0);
+}
+
+.skewright {
+  transform: matrix(1, 0, -0.176327, 1, 0, 0);
+}

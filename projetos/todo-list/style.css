@@ -1,0 +1,80 @@
+.completed {
+  text-decoration: line-through solid black;
+}
+
+.selected {
+  background-color: gray;
+}
+
+body {
+  background-color: rgb(146 , 245 , 146);
+}
+
+header {
+  font-size: 48px;
+  text-decoration: underline solid rgb(8 , 59 , 8);
+  color: rgb(8 , 59 , 8);
+  margin: auto;
+  text-align: center;
+  line-height: 80px;
+}
+
+p {
+  font-size: 16px;
+  font-style: italic;
+  margin: auto;
+  text-align: center;
+}
+
+#input-section {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  gap: 5px;
+}
+
+ol > * {
+  font-size: 30px;
+  text-align: center;
+}
+
+#input-section > * {
+  font-size: 20px;
+  padding: 10px;
+}
+
+#list-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+ol {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-position: inside;
+  padding: 0;
+  width: 30%;
+}
+
+#move-btns {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+#btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+#btns > * {
+  font-size: 16px;
+  padding: 10px;
+}
