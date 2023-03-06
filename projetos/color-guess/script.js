@@ -2,7 +2,12 @@ const rgbColorText = document.getElementById('rgb-color');
 const balls = document.getElementsByClassName('ball');
 const answerText = document.getElementById('answer');
 const btnReset = document.getElementById('reset-game');
+const btnNext = document.getElementById('next-game');
 const score = document.getElementById('score');
+
+const wrongAnswerAudio = new Audio('./audio/wrong-answer-buzzer.wav'); // https://freesound.org/s/650842/
+const rightAnswerAudio = new Audio('./audio/right-answer-buzz.wav'); // https://freesound.org/s/264981/
+const levelWinAudio = new Audio('./audio/level-win.wav'); // https://freesound.org/s/258142/
 
 function colorGenerator() {
   const red = Math.floor(Math.random() * 255) + 1;
@@ -18,48 +23,73 @@ function colorBalls() {
   }
 }
 
-colorBalls();
-
 function pickColor() {
   const index = Math.floor(Math.random() * 6);
   const pickedColor = balls[index].style.backgroundColor;
   rgbColorText.innerText = pickedColor.slice(3);
 }
 
-pickColor();
-
 function selectedBall(ball) {
   const selected = document.getElementsByClassName('selected')[0];
-  if (ball.className.includes('selected')) {
-    return;
-  }
+
   if (selected) {
     selected.classList.remove('selected');
   }
+
   ball.classList.add('selected');
+}
+
+function isGameOver() {
+  if (score.innerText >= 20) {
+    answerText.innerText = 'Você ganhou!!!!';
+    btnNext.style.display = 'none';
+    levelWinAudio.play();
+  }
 }
 
 function guessBall(event) {
   selectedBall(event.target);
   const clickedBallColor = event.target.style.backgroundColor.slice(3);
+
   if (clickedBallColor === rgbColorText.innerText) {
     answerText.innerText = 'Acertou!';
-    score.innerText = `${parseInt(score.innerText, 10) + 3}`;
+    score.innerText = +score.innerText + 3;
+    btnNext.disabled = false;
+    for (let index = 0; index < balls.length; index += 1) {
+      balls[index].removeEventListener('click', guessBall);
+    }
+    rightAnswerAudio.play();
+    isGameOver();
   } else {
     answerText.innerText = 'Errou! Tente novamente!';
+    score.innerText = +score.innerText - 2;
+    wrongAnswerAudio.play();
   }
 }
 
-for (let index = 0; index < balls.length; index += 1) {
-  balls[index].addEventListener('click', guessBall);
-}
-
-btnReset.addEventListener('click', () => {
+function nextGame() {
   colorBalls();
   pickColor();
-  answerText.innerText = 'Escolha uma cor';
+  answerText.innerText = 'Escolha uma cor:';
   const selected = document.getElementsByClassName('selected')[0];
+
   if (selected) {
     selected.classList.remove('selected');
   }
+
+  btnNext.disabled = true;
+
+  for (let index = 0; index < balls.length; index += 1) {
+    balls[index].addEventListener('click', guessBall);
+  }
+}
+
+nextGame();
+
+btnReset.addEventListener('click', () => {
+  score.innerText = 0;
+  btnNext.style.display = 'inline';
+  nextGame();
 });
+
+btnNext.addEventListener('click', nextGame);

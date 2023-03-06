@@ -1,21 +1,28 @@
+* {
+  margin: 0;
+}
+
 body {
   text-align: center;
 }
 
 h1 {
   font-size: 60px;
+  margin: 50px 0 50px;
 }
 
 #score-container {
   font-size: 30px;
+  margin-bottom: 50px;
 }
 
 #rgb-color {
   font-size: 40px;
-  border: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   background-color: pink;
   line-height: 60px;
-  width: 300px;
+  width: 100vw;
   vertical-align: middle;
   margin: auto;
 }
@@ -29,9 +36,10 @@ h1 {
   display: flex;
   flex-direction: row;
   gap: 50px;
+  height: 180px;
   justify-content: center;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .ball {
@@ -44,7 +52,19 @@ h1 {
   border: 5px black solid;
 }
 
-#reset-game {
+#reset-game, #next-game {
   font-size: 25px;
   padding: 10px;
+  width: 200px;
+}
+
+#next-game:enabled {
+  background-color: green;
+  color: white
+}
+
+footer {
+  bottom: 10px;
+  position: fixed;
+  width: 100%;
 }
