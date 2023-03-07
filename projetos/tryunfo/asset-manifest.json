@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/projetos/tryunfo/static/css/main.66c8f33a.css",
+    "main.js": "/projetos/tryunfo/static/js/main.fd1953f6.js",
+    "static/media/trunfo.png": "/projetos/tryunfo/static/media/trunfo.178f44d372ccb6e42a08.png",
+    "static/media/no-image.png": "/projetos/tryunfo/static/media/no-image.c480a169fe038274cfa3.png",
+    "index.html": "/projetos/tryunfo/index.html",
+    "main.66c8f33a.css.map": "/projetos/tryunfo/static/css/main.66c8f33a.css.map",
+    "main.fd1953f6.js.map": "/projetos/tryunfo/static/js/main.fd1953f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66c8f33a.css",
+    "static/js/main.fd1953f6.js"
+  ]
+}
