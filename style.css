@@ -194,6 +194,28 @@ p {
     padding: 20px 70px 70px;
 }
 
+.stacks-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.stacks {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.stacks img {
+    height: 8vw;
+}
+
+.stacks span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
 footer {
     background-color: #0f5274;
     box-shadow: 0 0 10px 0 grey;
