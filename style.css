@@ -75,7 +75,7 @@ p {
     padding: 40px;
 }
 
-#projects-section {
+.projects-section {
     padding: 20px 70px 70px;
 }
 
@@ -87,7 +87,7 @@ p {
     margin-bottom: 40px;
 }
 
-#network-links-list, #projetos-links-list {
+#network-links-list, .projetos-links-list {
     display: flex;
     flex-direction: row;
     gap: 50px;
