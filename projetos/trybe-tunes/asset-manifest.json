@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/projetos/trybe-tunes/static/css/main.76ed91c2.css",
+    "main.js": "/projetos/trybe-tunes/static/js/main.43c8d18c.js",
+    "static/media/bars.gif": "/projetos/trybe-tunes/static/media/bars.0070813842df2fb08753.gif",
+    "static/media/logo.png": "/projetos/trybe-tunes/static/media/logo.7af5e1c9c389afda0fb1.png",
+    "static/media/heart-filled.png": "/projetos/trybe-tunes/static/media/heart-filled.e75ac1963662549a4b4f.png",
+    "static/media/no-profile-picture.png": "/projetos/trybe-tunes/static/media/no-profile-picture.eb160ef4b2707ae47824.png",
+    "static/media/heart.png": "/projetos/trybe-tunes/static/media/heart.996f365b5b33089e2f48.png",
+    "index.html": "/projetos/trybe-tunes/index.html",
+    "main.76ed91c2.css.map": "/projetos/trybe-tunes/static/css/main.76ed91c2.css.map",
+    "main.43c8d18c.js.map": "/projetos/trybe-tunes/static/js/main.43c8d18c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76ed91c2.css",
+    "static/js/main.43c8d18c.js"
+  ]
+}
